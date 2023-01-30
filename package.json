@@ -2,7 +2,7 @@
    "name": "from_sea_to_table",
    "version": "0.1.0",
    "private": true,
-   "homepage": "https://meidro.github.io/from_sea_to_table/",
+   "homepage": "https://meidro.github.io/s_morya_na_stol/",
    "dependencies": {
       "@testing-library/jest-dom": "^5.14.1",
       "@testing-library/react": "^13.0.0",
