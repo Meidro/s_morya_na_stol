@@ -9,6 +9,7 @@ export const App = () => {
          <button onClick={() => setCount((prev) => prev + 1)}>Плюс 1</button>
          <button onClick={() => setCount((prev) => prev - 1)}>Минус 1</button>
          <button onClick={() => setCount((prev) => prev + 10)}>Увеличить на 10</button>
+         <button onClick={() => setCount((prev) => prev - 10)}>Уменьшить на 10</button>
       </div>
    );
 };
