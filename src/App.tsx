@@ -1,15 +1,21 @@
-import {useState} from 'react';
+import {Route, Routes} from 'react-router-dom';
+import styles from './App.module.css';
+import {Catalog} from './components/Catalog/catalog';
+import {Home} from './components/Home/home';
+import {NavBar} from './components/NavBar/nav-bar';
 
 export const App = () => {
-   const [count, setCount] = useState(0);
-
    return (
-      <div>
-         <h1>{count}</h1>
-         <button onClick={() => setCount((prev) => prev + 1)}>Плюс 1</button>
-         <button onClick={() => setCount((prev) => prev - 1)}>Минус 1</button>
-         <button onClick={() => setCount((prev) => prev + 10)}>Увеличить на 10</button>
-         <button onClick={() => setCount((prev) => prev - 10)}>Уменьшить на 10</button>
+      <div className={styles.wrapper}>
+         <div className={styles.content}>
+            <Routes>
+               <Route path='/' element={<Home />} />
+               <Route path='/catalog' element={<Catalog />} />
+               {/* <Route path='/' element={}/>
+               <Route path='/' element={}/> */}
+            </Routes>
+         </div>
+         <NavBar />
       </div>
    );
 };
