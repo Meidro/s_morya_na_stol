@@ -1,0 +1,28 @@
+.wrapper {
+   position: relative;
+   display: block;
+
+   height: 40px;
+}
+
+.input {
+   position: absolute;
+   width: 100%;
+   background-color: #444444;
+   font-size: 12px;
+   font-weight: 700;
+   line-height: 16px;
+   padding: 12px;
+   border-radius: 10px;
+   color: #ffffff;
+}
+
+.input::placeholder {
+   color: #b8b8b8;
+}
+
+.search {
+   position: absolute;
+   top: 12px;
+   right: 12px;
+}

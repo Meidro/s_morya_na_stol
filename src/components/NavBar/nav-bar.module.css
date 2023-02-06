@@ -1,5 +1,5 @@
 .wrapper {
-   background-color: #333333;
+   background-color: var(--top-color);
    color: #ffffff;
    position: fixed;
    left: 0;
