@@ -1,4 +1,5 @@
 .wrapper {
+   position: relative;
    background-color: var(--top-color);
    color: #ffffff;
    position: fixed;
@@ -30,4 +31,38 @@
    font-size: 12px;
    font-weight: 700;
    margin-top: 6px;
+}
+
+.basket {
+   position: absolute;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: var(--top-color);
+   /* border: 2px solid #e00e65; */
+   border-radius: 50%;
+   top: -20px;
+   left: 50%;
+   margin-left: -25px;
+}
+
+.basket span {
+   font-size: 10px;
+   color: #e00e65;
+}
+
+.basket__linkItem {
+   justify-content: center;
+   width: 50px;
+   height: 50px;
+   border: 2px solid #e00e65;
+   border-radius: 50%;
+}
+
+.center {
+   width: 20px;
+}
+
+.div {
+   margin-bottom: 9px;
 }

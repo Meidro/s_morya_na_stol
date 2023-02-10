@@ -1,4 +1,4 @@
-import {Search} from '../../components/SearchTop/search-top';
+import {SearchTop} from '../../components/SearchTop/search-top';
 import styles from './home.module.css';
 
 export const Home = () => {
@@ -6,7 +6,7 @@ export const Home = () => {
       <div className={styles.wrapper}>
          <div className={styles.header}>
             <div className='container'>
-               <Search />
+               <SearchTop />
             </div>
          </div>
          <div className={styles.main}>

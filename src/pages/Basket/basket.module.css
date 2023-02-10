@@ -1,0 +1,35 @@
+.basket {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.description {
+   align-self: flex-start;
+   color: #ffffff;
+   font-weight: 700;
+}
+
+.basket__body {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 255px;
+   text-align: center;
+   flex: 1 1 auto;
+}
+
+.basket__title {
+   font-size: 24px;
+   font-weight: 700;
+   color: #ffffff;
+   margin-bottom: 10px;
+}
+
+.basket__subTitle {
+   font-size: 14px;
+   color: #ffffff;
+}

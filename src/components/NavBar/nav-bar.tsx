@@ -1,5 +1,5 @@
 import styles from './nav-bar.module.css';
-import {FaHome, FaTh, FaSearch, FaRegUser} from 'react-icons/fa';
+import {FaHome, FaTh, FaSearch, FaRegUser, FaShoppingCart} from 'react-icons/fa';
 import {NavLink} from 'react-router-dom';
 
 export const NavBar = () => {
@@ -29,6 +29,7 @@ export const NavBar = () => {
                      <span>Каталог</span>
                   </NavLink>
                </li>
+               <li className={styles.center}></li>
                <li>
                   <NavLink
                      className={({isActive}) => {
@@ -50,6 +51,17 @@ export const NavBar = () => {
                      <FaRegUser />
                      <span>Профиль</span>
                   </NavLink>
+               </li>
+               <li className={styles.basket}>
+                  <div className={`${styles.linkItem} ${styles.div}`}>
+                     <NavLink
+                        className={`${styles.linkItem} ${styles.basket__linkItem} ${styles.active}`}
+                        to={'/basket'}
+                     >
+                        <FaShoppingCart size={'23px'} />
+                     </NavLink>
+                  </div>
+                  <span>0 руб.</span>
                </li>
             </ul>
          </div>
