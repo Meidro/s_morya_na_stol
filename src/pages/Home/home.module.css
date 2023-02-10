@@ -1,0 +1,19 @@
+.wrapper {
+   height: 100%;
+}
+
+.header {
+   background-color: var(--top-color);
+   padding: 20px 0 10px;
+}
+
+.main {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.title {
+   color: #ffffff;
+}

@@ -1,7 +1,7 @@
 import {Route, Routes} from 'react-router-dom';
 import styles from './App.module.css';
-import {Catalog} from './components/Catalog/catalog';
-import {Home} from './components/Home/home';
+import {Catalog} from './pages/Catalog/catalog';
+import {Home} from './pages/Home/home';
 import {NavBar} from './components/NavBar/nav-bar';
 
 export const App = () => {
@@ -11,8 +11,6 @@ export const App = () => {
             <Routes>
                <Route path='/' element={<Home />} />
                <Route path='/catalog' element={<Catalog />} />
-               {/* <Route path='/' element={}/>
-               <Route path='/' element={}/> */}
             </Routes>
          </div>
          <NavBar />

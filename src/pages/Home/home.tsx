@@ -1,4 +1,4 @@
-import {Search} from '../SearchTop/search-top';
+import {Search} from '../../components/SearchTop/search-top';
 import styles from './home.module.css';
 
 export const Home = () => {
@@ -8,6 +8,9 @@ export const Home = () => {
             <div className='container'>
                <Search />
             </div>
+         </div>
+         <div className={styles.main}>
+            <div className={styles.title}>Здесь позже будет главная страница</div>
          </div>
       </div>
    );
